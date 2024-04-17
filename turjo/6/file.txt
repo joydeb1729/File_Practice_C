@@ -1,0 +1,4 @@
+file.txt
+I love programming.
+Programming with MM Sir fun.
+Learning C programming at KU is simple and easy.
