@@ -30,7 +30,7 @@ int main()
     // second argument: how (in which manner/style) each token will be read/taken from steam;
     // third argument: where to save this token;
 
-        if(_input % 2 == 0 )
+        if(_input % 2 == 1 )
         fprintf(odd,"%d\n",_input);
         else
         fprintf(even,"%d\n",_input);
