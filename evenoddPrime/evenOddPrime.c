@@ -30,12 +30,12 @@ int main()
     // second argument: how (in which manner/style) each token will be read/taken from steam;
     // third argument: where to save this token;
 
-        if(_input % 2 == 1 )
-        fprintf(odd,"%d\n",_input);
-        else
+        if(_input % 2 == 0 )
         fprintf(even,"%d\n",_input);
+        else
+        fprintf(odd,"%d\n",_input);
 
-        if(isPrime(arr[i]))
+        if(isPrime(_input))
         fprintf(prime,"%d\n",_input);
 
     }
