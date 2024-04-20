@@ -1,0 +1,9 @@
+file txt
+I love programming.
+Programming with files is so fun.
+Learning C programming at KU is so simple and easy.
+
+file txt
+I love programming.
+Programming with files is so fun.
+Learning C programming at KU is so simple and easy.
