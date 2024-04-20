@@ -21,14 +21,14 @@ int main() {
     int lineCount=1;
     int wordCount=0;
 
-
+    // this approach is relatively easier
     for(i=0; i<length; i++)
     {
         if(str[i]=='\n')
-        lineCount++;
+            lineCount++;
 
-        if((str[i]!=' ' && str[i]!='\n') && (str[i+1]==' ' || str[i+1]=='\n' || str[i+1]=='\0'))
-        wordCount++;
+        if((str[i]!=' ' && str[i]!='\n') && (str[i+1]==' ' || str[i+1]=='\n' || str[i+1]=='\0' || str[i+1]=='.' || str[i+1]==','))
+            wordCount++;
     }
 
     printf("Total character: %d\nTotal words: %d\nTotal line: %d\n", length, wordCount, lineCount);

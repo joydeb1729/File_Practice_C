@@ -1,6 +1,5 @@
 #include <stdio.h>
-#include<math.h>
-
+#include <math.h>
 
 int isPrime(int x)
 {
@@ -18,36 +17,30 @@ int isPrime(int x)
 
 int main()
 {
-    
     FILE *ptr=NULL, *even=NULL, *odd=NULL, *prime=NULL;
 
     ptr = fopen("C:\\Users\\Durjay\\OneDrive\\Desktop\\test.txt", "r");
-    even= fopen("even.txt","a");
-    odd= fopen("odd.txt", "a");
-    prime= fopen("prime.txt", "a");
+    even = fopen("even.txt","w"); // using appending mode may cause confusion if the program is run muntiple times by user
+    odd = fopen("odd.txt", "w");
+    prime = fopen("prime.txt", "w");
 
-    int arr[100];
-    int i=0;
+    int _input;
+    while(fscanf(ptr,"%d",&_input)!=EOF){ 
+    // first argument is the steam, from where token will be read;
+    // second argument: how (in which manner/style) each token will be read/taken from steam;
+    // third argument: where to save this token;
 
-    while(fscanf(ptr,"%d",&arr[i])!=EOF){i++;}
-
-    int length=i;
-
-    for(i=0; i<length; i++)
-    {
-        if(arr[i]%2)
-        fprintf(odd,"%d\n",arr[i]);
+        if(_input % 2 == 0 )
+        fprintf(even,"%d\n",_input);
         else
-        fprintf(even,"%d\n",arr[i]);
+        fprintf(odd,"%d\n",_input);
 
-        if(isPrime(arr[i]))
-        fprintf(prime,"%d\n",arr[i]);
+        if(isPrime(_input))
+        fprintf(prime,"%d\n",_input);
+
     }
 
-    fclose(ptr);
-    fclose(odd);
-    fclose(even);
-    fclose(prime);
+    fclose(ptr), fclose(odd), fclose(even), fclose(prime);
 
     return 0;
 }
