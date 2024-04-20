@@ -1,22 +1,24 @@
 #include <stdio.h>
-#include<string.h>
+#include <string.h>
 
 void removeLine(char *str, int targetLine)
 {
-    int i=1;
-    char *start=str;
+    int i = 1;
+    char *start = str;
 
-    while(i<targetLine)
+    while(i < targetLine)
+    // for(int i = 1; i < targetLine; i++)
     {
-        start=strchr(start,'\n');
+        start = strchr(start,'\n'); // The  strchr()  function  returns  a pointer to the "first occurrence" of the specified CHARACTER in the string.
         i++;
     }
-    if(targetLine>1)
-    start++; // point at the first of target line
-    char *end=strchr(start,'\n');
+    if(targetLine > 1){
+        start++;
+    } // point at the first of target line
+    char *end = strchr(start,'\n');
 
 
-    if(end==NULL){return;}//if target is last line, just return
+    if(end == NULL){return;}//if target is last line, just return
     else{end++;} //if not, Move past the newline character
 
     memmove(start,end,strlen(end)+1); // remove all characters from start to end
@@ -33,7 +35,7 @@ int main()
     while(fscanf(ptr,"%c",&str[i])!=EOF){i++;}
     fclose(ptr);
 
-    printf("Enter the line you want to remove: ");
+    printf("Enter the line number you want to remove: ");
     scanf("%d",&targetLine);
 
     removeLine(str,targetLine);

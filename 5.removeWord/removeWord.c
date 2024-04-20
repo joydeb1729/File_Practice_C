@@ -1,11 +1,12 @@
 #include <stdio.h>
-#include<string.h>
+#include <string.h>
 
 int wordRemove(char *str, char *word)
 {
     int len=strlen(word);
-    if(strstr(str,word)==NULL)
-    return 0;
+    if(strstr(str,word)==NULL){
+        return 0;
+    }
 
     char *ptr=str;
 
