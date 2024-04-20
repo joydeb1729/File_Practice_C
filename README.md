@@ -247,13 +247,62 @@ characteristics: *
 
 ---
 
-## 12. Assume that you have an array of 20 positive integers. Write a program to recursively determine the summation of all prime integers in the array. The array will be taken as input from file.
+## 12. Assume that you have an array of 20 positive integers in a file. Write a program to RECURSIVELY determine the SUMMATION of all prime integers in the array. You SHOULD write the prime testing function recursively. The array will be taken as input from file and append the answer to the input file at last.
+
+input.txt
+```
+4
+345
+45
+78
+324
+5
+45
+453
+435
+37
+78
+423
+453
+34
+578
+31
+374
+19
+11
+111
+```
+
+output:
+```
+4
+345
+45
+78
+324
+5
+45
+453
+435
+37
+78
+423
+453
+34
+578
+31
+374
+19
+11
+111
+sum:103
+```
 
 ---
 
 ## 13. Write a program to take a string with spaces from a file. Your program will save the string to `output.txt` after trimming it. Let us assume that the input string is "        I live in a beautiful        village.           ". Your program will remove the spaces from the front and back of the string and then save it. Thus, the output will be "I live in a beautiful        village." For trimming (i.e., for removing spaces from the front and back) you need to create a user-defined function called "trimstring" that takes a string as a parameter.
 
---
+---
 
 ## 14. "LTrim", "RTrim", and "MTrim", and "CountOccurrence"
 

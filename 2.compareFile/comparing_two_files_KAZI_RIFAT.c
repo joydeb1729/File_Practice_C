@@ -34,14 +34,7 @@ int main(void) {
   int line_count = 1, column_count = 0, is_equal = true;
   char c1, c2;
 
-  //// getting file length to allocate memory
-  // fseek(f1, 0, SEEK_END);
-  // f1_len = ftell(f1);
-  // fseek(f2, 0, SEEK_END);
-  // f2_len = ftell(f2);
   rewind(f1), rewind(f2);
-  // char *str1 = (char *)malloc(sizeof(char) * (f1_len + 1));
-  // char *str2 = (char *)malloc(sizeof(char) * (f2_len + 1));
 
   // comparing
   while ((c1 = fgetc(f1)) != EOF && (c2 = fgetc(f2)) != EOF) {
