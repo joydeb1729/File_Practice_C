@@ -128,6 +128,8 @@ take input from User
 
 file.txt
 ```
+
+
 I love programming.
 
 
@@ -135,6 +137,7 @@ I love programming.
 Programming with files  fun.
 
 Learning C programming at Codeforwin  simple and easy.
+
 ```
 
 ---
