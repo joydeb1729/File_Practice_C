@@ -1,8 +1,8 @@
 
-------------------------------------**file practise question in C**-----------------------------
+# **file practise question in C**
 
- 										@author_Durjay1729
- 										Github: https://github.com/durjay1729/
+@author_Durjay1729
+Github: https://github.com/durjay1729/
 
 
 
@@ -120,7 +120,7 @@ Programming with MM Sir fun.
 Learning C programming at KU is simple and easy.
 ```
 
-input from User
+take input from User
 
 ---
 
@@ -183,7 +183,7 @@ lEARNING c PROGRAMMING AT ku IS SIMPLE AND EASY.
 
 ---
 
-NOTE: the following three questions are previous lab test questions set by Dr Manishankar Mondal Sir on Strings. We have modified them to add file handling concepts.
+NOTE: the following four questions are previous lab test questions set by Dr Manishankar Mondal Sir on Strings. We have modified them to add file handling concepts.
 
 ## 11. Write a program that takes a file containing string with spaces from the user. Your program will then determine the following and save them in txt files.
 1. Find the individual words and store them in a two-dimensional array. Save the words.
@@ -192,7 +192,10 @@ NOTE: the following three questions are previous lab test questions set by Dr Ma
 
 
 Sample Input file `input.txt`:
-```I know the man. the man is a good human being. the man has good characteristics. man man man man  the the the the good good```
+
+```
+I know the man. the man is a good human being. the man has good characteristics. man man man man  the the the the good good
+```
 
 
 First Output file:
@@ -241,3 +244,29 @@ being: *
 has: *
 characteristics: *
 ```
+
+---
+
+## 12. Assume that you have an array of 20 positive integers. Write a program to recursively determine the summation of all prime integers in the array. The array will be taken as input from file.
+
+---
+
+## 13. Write a program to take a string with spaces from a file. Your program will save the string to `output.txt` after trimming it. Let us assume that the input string is "        I live in a beautiful        village.           ". Your program will remove the spaces from the front and back of the string and then save it. Thus, the output will be "I live in a beautiful        village." For trimming (i.e., for removing spaces from the front and back) you need to create a user-defined function called "trimstring" that takes a string as a parameter.
+
+--
+
+## 14. "LTrim", "RTrim", and "MTrim", and "CountOccurrence"
+
+Write a program that will take a string with spaces from file as input. Write four functions named "LTrim", "RTrim", and "MTrim", and "CountOccurrence". Each of these functions will take a string as a parameter.
+
+"LTrim" will delete all the spaces from the left hand side of the parameter string and will return the string that will be obtained after deleting the left side spaces.
+
+"RTrim" will delete all the spaces from the right hand side of the parameter string and will return the string that will be obtained after deleting the right side spaces.
+
+"MTrim" will keep only one space between every two consecutive words. There can be multiple spaces between two words in a string. Only one space will be kept and other spaces will be deleted.
+
+And, "CountOccurrence" will recursively count the occurrences of "abc" in a parameter string and will return the count. This function might also take other parameters as you wish to accomplish the task.
+
+---
+
+THE END
