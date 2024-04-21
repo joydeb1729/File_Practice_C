@@ -35,7 +35,7 @@ int main()
     while(fscanf(ptr,"%c",&str[i])!=EOF){i++;}
 
 
-    char *token= strtok(str,"  \n"); //the string will be split whenever a space or new line character is encountered.
+    char *token= strtok(str," \n"); //the string will be split whenever a space or new line character is encountered.
     int got=0;
 
     while(token!=NULL)
