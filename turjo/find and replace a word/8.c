@@ -6,7 +6,7 @@ int main()
 {
     FILE *fp = fopen("file.txt", "r");
     printf("Enter word  ");
-    char trgt[100], buffer[1000], nw[10000] = "",replace[1222]="froframminf";
+    char trgt[100], buffer[1000], nw[10000] = "", replace[1222] = "froframminf";
     // gets(trgt);
     scanf("%s", trgt);
     int till = strlen(trgt);
